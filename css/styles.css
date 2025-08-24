@@ -211,6 +211,10 @@ main .headers ul li{
     padding: 120px 0px;
 }
 
+.card-item{
+    border: 1px solid red;
+}
+
 .contain{
     display: flex;
     justify-content: center;
@@ -238,7 +242,7 @@ margin-bottom: 75px;
     align-items: center;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    box-shadow: inset;
+    box-shadow: rgba(46, 47, 66, 0.08);
     background-color: #FFFFFF; 
 }
 
@@ -606,4 +610,121 @@ legend p{
 .footer-icon{
     width: 24px;
     height: 24px;
+}
+
+@media(max-width:1310px) and (min-width:321px){
+    
+
+     .containers {
+            width: 768px;
+            background-color: #FFFFFF;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .comms{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contact {
+             width: 768px;
+             height: 436px;
+             background-size: cover;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 768px;
+    
+        }
+         main {
+             width: 768px;
+             padding: 0;
+         }
+         .headers{
+            display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                width: 768px;
+                justify-content: center;
+         }
+         .headers ul{
+            display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                justify-content: center;
+         }
+         .headers .item{
+                    flex-basis: calc(50% - 24px);
+                    box-sizing: border-box;
+                    flex-direction: column;                             
+         } 
+         .icon-box{
+            display: none;
+         }
+
+         .contain{
+            width: 768px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            height: max-content;
+         }
+         
+         .contain ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .teams-info{
+            width: 768px;
+         }
+
+         .port-info{
+            width: 768px;
+         }
+
+        .container .port-info ul {
+             justify-content: center;
+             align-items: center;
+            flex-direction: row;
+            gap: 24px;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            }
+         .container-foot{
+            width: 768px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        .foot{
+            width: 768px;
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .foot-2{
+          margin-left: -230px;
+        }
+
+        .card-item{
+            border: 1px solid blue;
+        }
 }
