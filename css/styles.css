@@ -612,7 +612,7 @@ legend p{
     height: 24px;
 }
 
-@media(max-width:1158px) and (min-width:769px){
+@media(max-width:1157px) and (min-width:767px){
     
 
      .containers {
@@ -727,4 +727,204 @@ legend p{
         .card-item{
             border: 1px solid blue;
         }
+}
+@media(max-width:767px) and (min-width:321px){
+    .containers {
+            width: 320px;
+            background-color: #FFFFFF;
+            justify-content: center;
+            align-items: center;
+        }
+
+    .containers nav,address{
+        display: none;
+    }
+
+    .headers{
+        justify-content: space-around;
+        
+    }
+        .comms {
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        .contact {
+            width: 320px;
+            height: 432px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .contact h1{
+            text-align: center;
+        }
+
+        .container {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 320px;
+    
+        }
+    
+        main {
+            width: 320px;
+            padding: 0;
+        }
+    
+        .headers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            width: 320px;
+            justify-content: center;
+        }
+    
+        .headers ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            justify-content: center;
+        }
+    
+        .headers .item {
+            flex-basis: calc(25% - 24px);
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+    
+        .icon-box {
+            display: none;
+        }
+    
+        .contain {
+            width: 320px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 24px;
+            height: max-content;
+        }
+    
+        .contain ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .teams-info {
+            width: 320px;
+        }
+    
+        .port-info {
+            width: 320px;
+        }
+    
+        .container .port-info ul {
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 24px;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+    
+        .container-foot {
+            width: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 620px;
+        }
+    
+        .foot {
+            display: flex;
+            width: 320px;
+            gap: 72px;
+            height: 620px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+       .footer-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+       }
+      
+        .footer-label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+
+        .footer-input{
+            margin-left: 50px;
+        } 
+
+        .footer input{
+            justify-content: center;
+            align-items: center;
+            margin-left: 40px;
+        }
+
+        .icon-send{
+            width: 24px;
+            height: 24px;
+        }
+
+        .foot-1{
+            justify-content: center;
+        }
+        .foot-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .foot-2 p{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .headers ul{
+            
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    padding: 0;
+                    margin: 0;
+                    width: 288px;
+                }       
+
+        .headers ul .item p {
+                width: 288px;                                       
+                max-width: 100%;                 
+                margin: 0 auto;
+                justify-content: center;
+             }
+
+        .headers ul .item h3 {
+                    text-align: center;
+                    margin: 12px 0;
+
+                }        
+
 }
