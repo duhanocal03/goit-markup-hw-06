@@ -612,6 +612,14 @@ legend p{
     height: 24px;
 }
 
+ .icon-heroicons-menu{
+    display: none;
+ }
+
+ .modal-menu{
+    display: none;
+ }
+
 @media(max-width:1157px) and (min-width:767px){
     
 
@@ -736,14 +744,16 @@ legend p{
             align-items: center;
         }
 
+    .containers header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+    }    
     .containers nav,address{
         display: none;
     }
 
-    .headers{
-        justify-content: space-around;
-        
-    }
         .comms {
             display: block;
             flex-direction: column;
@@ -869,19 +879,17 @@ legend p{
       
         .footer-label {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
            }
 
+        .footer-label p{
+            margin-left: 30px;
+        }   
+
         .footer-input{
             margin-left: 50px;
-        } 
-
-        .footer input{
-            justify-content: center;
-            align-items: center;
-            margin-left: 40px;
-        }
+        }    
 
         .icon-send{
             width: 24px;
@@ -925,6 +933,117 @@ legend p{
                     text-align: center;
                     margin: 12px 0;
 
-                }        
+                }
+        
+         .icon-heroicons-menu{
+            display: block;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+         }
+
+         .modal-menu{
+            width: 320px;
+            height: 640px;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            gap: 48px;
+         }
+
+         .menu{
+            margin-bottom: 168px;
+         }
+
+         .modal-menu .link-1::after{
+            content: none;
+         }
+
+          .modal-menu {
+            position: relative;
+            padding-top: 60px;
+            display: none;
+                }
+        
+           .menu-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                }
+        
+             .menu-close .icon-close {
+                  width: 8px;
+                  height: 8px;
+                }
+
+                .is-open{
+                    display: block;
+                }
+
+
+                .modal {
+                    position: fixed;
+                     top: 0;
+                     left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                 }
+
+                .modal-content {
+                         background-color: #fff;
+                         border-radius: 4px;
+                         width: 288px;
+                        height: 600px;
+                 }
+
+                 .container-form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 288px;
+                    height: 600px;
+                    background-color: #fcfcfc;
+                    padding: 24px;
+                    margin-top: 40px;
+                    z-index: 2;
+                 }
+
+                 .container-form .form-label{
+                    width: 256px;
+                 }
+
+                 .container-form .form-input{
+                    width: 256px;
+                 }
+
+                 .form-group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                 }
+
+                 .form-button{
+                    margin-left: 30px;
+                 }
+
+                legend {
+                    text-align: center;
+                }
+                
+                legend p {
+                     margin: 0;
+                     text-align: center;
+                }
+                
+                 .is-open{
+                    display: flex;
+                 }
 
 }
