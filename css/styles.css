@@ -732,9 +732,6 @@ legend p{
           margin-left: -230px;
         }
 
-        .card-item{
-            border: 1px solid blue;
-        }
 }
 @media(max-width:767px) and (min-width:321px){
     .containers {
@@ -1035,15 +1032,23 @@ legend p{
 
                 legend {
                     text-align: center;
+                    margin-top: 8px;
                 }
                 
                 legend p {
                      margin: 0;
                      text-align: center;
                 }
-                
+
                  .is-open{
                     display: flex;
                  }
 
+}
+
+@media(min-resolution:2x){
+    .contact{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
+                url("../images/contactbg-2x.png");
+    }
 }
