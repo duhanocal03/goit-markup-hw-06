@@ -18,6 +18,7 @@
   </head>
   <body>
     <div class="containers">
+      <input type="checkbox" id="mobile-menu-toggle" hidden>
       <header>
         <a href="index.html">
           <span class="logo-web">WEB</span
@@ -42,12 +43,19 @@
             </li>
           </ul>
         </address>
-         <svg class="icon icon-heroicons-menu"><use xlink:href="./images/icon/heroicons-menu.svg"></use></svg>
+        <label for="mobile-menu-toggle" class="menu-button">
+          <svg class="icon icon-heroicons-menu"><use xlink:href="./images/icon/heroicons-menu.svg"></use></svg>
+        </label>
       </header>
 
+     
         <div class="modal-menu">
-          <div class="menu-close"> <svg class="icon icon-close"><use xlink:href="./images/icon/close-black.svg"></use></svg></div> 
-            <ul class="menu">
+        <label for="mobile-menu-toggle" class="menu-close">
+          <div>
+             <svg class="icon icon-close"><use xlink:href="./images/icon/close-black.svg"></use></svg>
+          </div> 
+        </label> 
+          <ul class="menu">
            <h2><li><a href="" class="link-1">Studio</a></li></h2> 
            <h2> <li><a href="" class="link">Portfolio</a></li></h2>
            <h2><li><a href="" class="link">Contacts</a></li></h2> 
@@ -93,7 +101,6 @@
               </svg>
             </div>
           </div>
-
           </div>
 
 

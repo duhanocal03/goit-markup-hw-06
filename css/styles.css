@@ -1046,7 +1046,12 @@ legend p{
 
 }
 
-@media(min-resolution:2x){
+ #mobile-menu-toggle:checked ~ .modal-menu{
+    opacity: 1;
+    display: block;
+ }
+
+@media(min-resolution: 2dppx){
     .contact{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
                 url("../images/contactbg-2x.png");
